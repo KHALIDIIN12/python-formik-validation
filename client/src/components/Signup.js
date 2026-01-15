@@ -98,13 +98,11 @@ export const SignupForm = () => {
             <p>Loading</p>
           ) : (
             customers.map((customer, i) => (
-              <>
-                <tr key={i}>
-                  <td>{customer.name}</td>
-                  <td>{customer.email}</td>
-                  <td>{customer.age}</td>
-                </tr>
-              </>
+              <tr key={i}>
+                <td>{customer.name}</td>
+                <td>{customer.email}</td>
+                <td>{customer.age}</td>
+              </tr>
             ))
           )}
         </tbody>
@@ -112,3 +110,4 @@ export const SignupForm = () => {
     </div>
   );
 };
+
